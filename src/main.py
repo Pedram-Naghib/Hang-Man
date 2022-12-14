@@ -11,12 +11,6 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
-def alphabet():
-    alphabets_in_capital=[]
-    for i in range(65,91):
-        alphabets_in_capital.append(chr(i))
-    return alphabets_in_capital
-
 def cyan(letter):
     return f"{bcolors.OKCYAN}{letter}{bcolors.ENDC}"
 
@@ -71,7 +65,7 @@ while mistakes + 1 != 0 and correct != 0:
     guesses += 1
 
 if correct == 0:
-    print(f'Congratulation you have won in {guesses} guesses!') # lost
+    print(f'Congratulation you have won in {guesses} guesses!')
 else:
     print('\033[95m\nSorry you\'ve lost! word was --> \033[0m', end='')
     print(red(word))
