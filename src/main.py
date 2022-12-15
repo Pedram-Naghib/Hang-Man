@@ -29,7 +29,7 @@ def check(letter):
         ind +=1
     return inds
 
-with open('words2.txt', 'r') as f:
+with open('words.txt', 'r') as f:
     words = f.readlines()
 
 word = choice(words).rstrip('\n').lower()
